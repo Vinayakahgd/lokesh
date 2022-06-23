@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="query.js"></script>
+  </head>
+  <body>
+    <center>
+      <header>
+        <center>
+          <ul class="nav">
+            <a href="index.html"><li class="navlist" >Home</li></a>
+            <a href="methedology.html"><li class="navlist" >Methodology</li></a>
+            <a href="review.html"><li class="navlist" >Literature</li></a>
+            <a href="results.html"><li class="navlist" >Results</li></a>
+            <a href="creators.html"><li class="navlist" >Creators</li></a>
+            <a href="contact.html"><li class="navlist" >Contact</li></a>
+
+          </ul>
+        </center>
+      </header>
+      <div class="contactcontent">
+        <center>
+
+
+    <div class="incontact">
+
+      <h1>Contact Us</h1>
+    </div>
+    <div class="incontact2">
+
+   <center>
+
+     <label for="name">Name</label><br>
+     <input type="text" name="name" placeholder="Name" id="name"><br>
+     <label for="email">E-Mail</label> <br>
+     <input type="text" name="email" placeholder="E-mail" id="email"> <br>
+     <label for="msg">Message</label> <br>
+     <input type="textarea" name="message" placeholder="Message" id="msg"> <br>
+     <label class="submitted" for="sub">Details submitted, we will reach out to you soon</label>
+   </center>
+    </div>
+    <br><br>
+    <input type="submit" name="submit" placeholder="Submit" id="sub">
+
+    <br>
+    <br>
+    <br>
+    </div>
+
+        </center>
+      </div>
+    </center>
+
+
+
+
+
+
+<footer>
+  <center>
+    <a  href="https://www.dsu.edu.in/" target="_blank"><img class="footerimg" src="logofooter.png" alt="DSCE"></a>
+      <h5>2022 Copywrite &#169;Team supercaps-Department of Automobile Engineering DSCE KS layout Bangalore-78 </h5>
+  </center>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script >
+$(document).ready(function()
+{
+  $(".incontact").hide();
+    $(".incontact2").hide();
+    $("#sub").hide();
+    $(".submitted").hide();
+  //$(".creatorcontent").hide();
+  //$(".creatorhead").fadeIn(2500);
+    $(".incontact").fadeIn(1500);
+    $(".incontact2").fadeIn(1500);
+    $("#sub").fadeIn(1500);
+
+    $("#sub").click(function(){
+      //$(".incontact").hide();
+      //  $(".incontact2").hide();
+        $(".incontact").hide();
+        $(".incontact2").hide();
+        $("#sub").hide();
+        $(".incontact").fadeIn(500);
+        $(".incontact2").fadeIn(500);
+        $(".submitted").fadeIn(2000);
+    });
+
+});
+</script>
+
+
+
+
+  </body>
+</html>
